@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Processes</name>
+	<author>Kobe Riddle</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modVersion>1.1</modVersion>
+	<packageId>KobeRiddle.Processes</packageId>
+	<description>Production chains
+	</description>
+	
+	<modDependencies>
+		<li>
+			<packageId>Syrchalis.Processor.Framework</packageId>
+			<displayName>[SYR] Processor Framework</displayName>
+			<downloadUrl>https://github.com/ViralReaction/ProcessorFramework</downloadUrl>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3210544395</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>

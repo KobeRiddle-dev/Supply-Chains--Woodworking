@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <RecipeDef Name="Processes.MakeLumber">
+        <jobstring>Sawing timber from logs.</jobstring>
+        <workAmount>600</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>0.25</workSkillLearnFactor>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_MakeWoodPlanks_Hand</soundWorking><!--need sfx -->
+        <targetCountAdjustment>20</targetCountAdjustment>
+        <recipeUsers>
+            <li>Processes.WoodTrestle</li>
+            <li>Processes.LumberMill</li>
+            <li>Process.ElectricLumberMill</li>
+            <li>Processes.ElectricWoodTrestle</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>
