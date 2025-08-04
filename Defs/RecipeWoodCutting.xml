@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Defs>
-
-    <RecipeDef Name="Processes.MakeLumber">
-        <jobstring>Sawing timber from logs.</jobstring>
-        <workAmount>600</workAmount>
+    <!-- Note: Giving a class a suffix `Base` is bad practice, but already established by Rimworld Convention. -->
+    <RecipeDef Name="SupplyChains.MakeLumberBase" Abstract="True">
+        <jobstring>Cutting lumber from logs.</jobstring>
+        <workAmount>400</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <workSkillLearnFactor>0.25</workSkillLearnFactor>
@@ -12,11 +12,34 @@
         <soundWorking>Recipe_MakeWoodPlanks_Hand</soundWorking><!--need sfx -->
         <targetCountAdjustment>20</targetCountAdjustment>
         <recipeUsers>
-            <li>Processes.WoodTrestle</li>
-            <li>Processes.LumberMill</li>
-            <li>Process.ElectricLumberMill</li>
-            <li>Processes.ElectricWoodTrestle</li>
+            <li>SupplyChains.WoodTrestle</li>
         </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SupplyChains.MakeLumberBase">
+        <defName>SupplyChains.MakeLumberAny</defName>
+        <label>make lumber x2</label>
+        <description>Cut raw wood into timber.</description>
+        <workerCounterClass>SupplyChains.RecipeWorkerCounter_MakeLumber</workerCounterClass>
+        <workAmount>30</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SupplyChains.Logs</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>SupplyChains.Logs</li>
+            </categories>
+        </fixedIngredientFilter>
+        <specialProducts>
+            <li>Butchery</li>
+        </specialProducts>
     </RecipeDef>
 
 </Defs>
