@@ -6,7 +6,7 @@
 
 Production stations:
 - Neolithic:
-	- Crafting spot: slow, 1 at a time cutting
+	- Woodcutting log: slow, 1 at a time cutting
 	- Wood Trestle: with the assistance of proper tools, wood can be cut faster and in small batches
 - Medieval:
 	- Mechanical Lumber Mill: mechanical power allows for wood to be cut much faster and in bigger batches
